@@ -1,0 +1,140 @@
+nav li:nth-child(4) {
+    border-bottom: 2px solid white;
+}
+
+header {
+    background-size: initial;
+    height: initial;
+    background-position: initial;
+    position: initial;
+}
+
+#bg {
+    position: relative;
+    padding: 120px 120px 40px;
+    background-color: #3ABFBC;
+    color: #efefef;
+}
+
+#bg h2 {
+    max-width: 500px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: normal;
+    color: #fff;
+}
+
+#bg .highlight {
+    color: #FFD966;
+}
+
+#title {
+    color: #3ABFBC;
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+#title h2 {
+    text-decoration: underline;
+    max-width: 450px;
+}
+
+#intro {
+    color: #919396;
+    text-align: left;
+    max-width: 1100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 40px;
+}
+
+#content {
+    padding: 30px 220px 200px;
+}
+
+#content div {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+}
+
+#content h2 {
+    color: #3ABFBC;
+    width: 500px;
+    max-width: 500px;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+#content p {
+    color: #919396;
+    padding-left: 100px;
+    max-width: 220px;
+}
+
+#content p span {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    nav li:nth-child(4) {
+        border-bottom: 2px solid white;
+    }
+
+    header {
+        background-size: initial;
+        height: initial;
+        background-position: initial;
+        position: initial;
+    }
+
+    #bg {
+        padding: 120px 60px 20px;
+    }
+
+    #bg h2 {
+        max-width: 100%;
+        font-size: 30px;
+    }
+
+    #title {
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+
+    #title h2 {
+        max-width: 100%;
+    }
+
+    #intro {
+        padding: 20px 20px 20px 50px;
+        max-width: 100%;
+    }
+
+    #content {
+        padding: 20px 40px 120px 80px;
+    }
+
+    #content div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    #content h2 {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #content p {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    #content p span {
+        margin-top: 5px;
+    }
+}

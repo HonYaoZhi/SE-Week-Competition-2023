@@ -1,0 +1,149 @@
+@import url('normalize.css');
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    color: #919396;
+}
+
+header {
+    font-family: Helvetica, sans-serif;
+    background-size: cover;
+    height: 600px;
+    background-position: bottom;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+nav li:first-child img {
+    width: 150px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    display: block;
+    transition: color 0.1s;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #919396;
+    text-align: center;
+    padding: 20px 40px 15px;
+    border-top: 0.2px solid #919396;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 13px;
+}
+
+footer .footer-top p,
+footer .footer-bottom {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.footer-top a {
+    color: #919396;
+}
+
+.footer-top a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: left;
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+footer .copyright{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        font-size: 14px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    nav a:hover {
+        color: #3ABFBC;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

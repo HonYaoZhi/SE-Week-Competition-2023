@@ -1,0 +1,321 @@
+nav li:nth-child(6) {
+    border-bottom: 2px solid white;
+}
+
+header {
+    background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2016/02/ANAMO-.4.jpg') center/cover no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    height: 70vh;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0) 40%);
+}
+
+#intro {
+    position: relative;
+    padding: 40px 120px;
+    margin-bottom: 50px;
+}
+
+#intro h2 {
+    max-width: 500px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: normal;
+    color: #fff;
+}
+
+#intro p {
+    color: #919396;
+}
+
+#inquiries p {
+    padding-left: 35px;
+}
+
+#inquiries form input,
+#inquiries form textarea {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    /* Set background to transparent and add border */
+    background: transparent;
+    border: 1px solid #939393;
+    /* Add a white border */
+}
+
+#inquiries form textarea {
+    height: 150px;
+}
+
+#inquiries .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3f3f3f;
+    width: 120px;
+    height: 50px;
+    color: #ffffff;
+    border: 1px solid #939393;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    ;
+}
+
+#inquiries .mainbox {
+    width: 500px;
+    height: 680px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+#inquiries .mainbox h2 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.896);
+    color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#inquiries h2 {
+    padding: 20px 40px;
+}
+
+#location {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    text-align: center;
+    height: 80vh;
+}
+
+#location div {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    overflow: visible;
+    position: relative;
+    background: url("https://visionone.com.my/wp-content/uploads/2016/02/v1off.jpg") no-repeat;
+}
+
+#location .office {
+    background: url("https://visionone.com.my/wp-content/uploads/2016/02/v1off.jpg") no-repeat;
+    background-size: cover;
+}
+
+#location .branch {
+    background: url("https://visionone.com.my/wp-content/uploads/2016/02/kuantan_branch.jpg") no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+#location .office h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#location .branch h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#location .office::before,
+#location .branch::before {
+    max-width: 380px;
+    content: attr(data-content);
+    text-align: center;
+    text-indent: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 16px;
+    text-align: justify;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#location .office:hover::before,
+#location .branch:hover::before {
+    opacity: 1;
+}
+
+#info {
+    text-align: left;
+    background: #000;
+    color: #fff;
+    width: 600px;
+    height: 420px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 420px;
+}
+
+#info div h2 {
+    text-align: left;
+}
+
+#info div .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#info div .subemail {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+#info div .content {
+    font-size: 16px;
+    color: #cacaca;
+}
+
+footer {
+    background-color: #000000;
+    color: #919396;
+}
+
+#contactBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #dedede6d;
+}
+
+@media screen and (max-width: 767px) {
+    #intro {
+        padding: 40px 20px;
+    }
+
+    #inquiries {
+        margin-bottom: 20px;
+    }
+
+    #inquiries form input,
+    #inquiries form textarea {
+        width: 100%;
+        margin: 0;
+    }
+
+    #location {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #location div {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    #location .branch {
+        margin-left: 0;
+    }
+
+    #location .office::before,
+    #location .branch::before {
+        max-width: 100%;
+    }
+
+    #info,
+    #inquiries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #inquiries .mainbox,
+    #info div {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    #info {
+        margin-top: 60px;
+    }
+}
